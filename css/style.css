@@ -1125,8 +1125,8 @@ body.page-infotech .about-hero-title {
   margin-top: 0.1em;
   margin-bottom: 0.8rem;
   margin-left: 0.35rem;
-  background: rgba(15, 23, 42, 0.05) !important;
-  border: 1.5px solid #0f172a !important;
+  background: rgba(15, 23, 42, 0.04) !important;
+  border: 1.5px solid #000000 !important;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08) !important;
   border-radius: 14px;
   padding: 0.06em 0.45em;
@@ -1137,17 +1137,19 @@ body.page-infotech .about-hero-title {
 
 .about-hero-title .hologram-text-container:hover {
   border-color: #000000 !important;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18) !important;
   transform: translateY(-2px);
 }
 
 .about-hero-title .hologram-scramble-text {
   display: inline-block;
-  background: linear-gradient(135deg, #0284c7 0%, #00b4d8 50%, #2563eb 100%) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  filter: drop-shadow(0 2px 8px rgba(2, 132, 199, 0.25)) !important;
-  font-weight: 700 !important;
+  background: none !important;
+  background-image: none !important;
+  color: #000000 !important;
+  -webkit-text-fill-color: #000000 !important;
+  -webkit-background-clip: unset !important;
+  filter: none !important;
+  font-weight: 800 !important;
   opacity: 0;
   transform: translateY(110%);
   transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.25s,
@@ -1167,8 +1169,8 @@ body.page-infotech .about-hero-title {
   left: 0;
   height: 2.5px;
   width: 0%;
-  background: linear-gradient(90deg, transparent, #0284c7, #00f2fe, #2563eb, transparent) !important;
-  box-shadow: 0 0 10px #00f2fe !important;
+  background: linear-gradient(90deg, transparent, #000000, #334155, #000000, transparent) !important;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25) !important;
   transition: width 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.5s;
 }
 
@@ -1336,9 +1338,14 @@ body.theme-page-dark-emerald .about-feature-icon svg {
   margin: 0;
 }
 
-.about-feature-details p strong {
-  color: #0284c7 !important;
-  font-weight: 700;
+.about-feature-details p strong,
+body.theme-page-cyber-blue .about-feature-details p strong,
+body.theme-cyber-blue .about-feature-details p strong,
+body.theme-page-dark-emerald .about-feature-details p strong,
+body.page-home .about-feature-details p strong,
+body.page-infotech .about-feature-details p strong {
+  color: #000000 !important;
+  font-weight: 700 !important;
   text-shadow: none !important;
 }
 
