@@ -15,7 +15,7 @@
   <!-- FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=20260904_insights_white_v2">
   <link rel="stylesheet" href="footer-premium.css">
 </head>
 
@@ -137,71 +137,49 @@
   </section>
 
   <!-- ===================================================
-       3. EDITORIAL ARTICLES SHOWCASE (Magazine Layout)
+       3. EDITORIAL ARTICLES SHOWCASE (Uniform Professional Grid)
        =================================================== -->
   <main class="insights-magazine-wrapper">
     <div class="container">
+      <div class="insights-uniform-grid">
 
-      <!-- ─── FEATURED ARTICLE (Large Horizontal Hero Layout) ─── -->
-      <article class="featured-insight-card reveal-up" data-category="ai">
-        <div class="featured-card-grid">
-          
-          <div class="featured-image-pane">
+        <!-- Topic 1: Artificial Intelligence -->
+        <article class="insight-article-card reveal-up" data-category="ai">
+          <div class="card-inner-uniform">
             <div class="insight-img-frame">
               <img src="assets/images/ai-enterprise.png" alt="How AI Is Reshaping the Modern Enterprise" class="insight-media-img" loading="lazy">
               <div class="insight-media-overlay"></div>
               <span class="reading-time-pill"><i class="fas fa-clock"></i> 6 min read</span>
             </div>
-          </div>
-
-          <div class="featured-content-pane">
-            <div class="article-meta-header">
-              <span class="article-category-tag cat-ai">
-                <i class="fas fa-brain"></i> ARTIFICIAL INTELLIGENCE
-              </span>
-              <span class="article-pub-date">September 2026</span>
-            </div>
-
-            <h2 class="featured-article-title">
-              How AI Is Reshaping the Modern Enterprise
-            </h2>
-
-            <p class="featured-article-desc">
-              Artificial intelligence is moving beyond experimentation and becoming part of everyday business operations. Explore how organizations are using AI to automate workflows, improve decisions, enhance customer experiences, and unlock new opportunities.
-            </p>
-
-            <div class="article-takeaways-preview">
-              <div class="takeaway-badge"><i class="fas fa-check-circle"></i> Cognitive Agentic Workflows</div>
-              <div class="takeaway-badge"><i class="fas fa-check-circle"></i> Proprietary LLM Governance</div>
-              <div class="takeaway-badge"><i class="fas fa-check-circle"></i> Real-Time Predictive AI</div>
-            </div>
-
-            <div class="article-card-footer">
-              <button type="button" class="btn btn-primary btn-read-insight" data-open-insight-modal="ai">
-                <span>Read Insight</span>
-                <i class="fas fa-arrow-right"></i>
-              </button>
-              <div class="author-attribution">
-                <span class="author-role">Arshith Technology Advisory</span>
+            <div class="card-content-body">
+              <div class="article-meta-header">
+                <span class="article-category-tag cat-ai">
+                  <i class="fas fa-brain"></i> ARTIFICIAL INTELLIGENCE
+                </span>
+                <span class="article-pub-date">September 2026</span>
+              </div>
+              <h3 class="article-title">How AI Is Reshaping the Modern Enterprise</h3>
+              <p class="article-summary">
+                Explore how organizations are using cognitive agentic workflows and automated intelligence to improve decisions and operational scale.
+              </p>
+              <div class="article-card-bottom">
+                <button type="button" class="btn-read-inline" data-open-insight-modal="ai">
+                  <span>Read Insight</span>
+                  <i class="fas fa-arrow-right"></i>
+                </button>
               </div>
             </div>
           </div>
+        </article>
 
-        </div>
-      </article>
-
-      <!-- ─── EDITORIAL ROW 1 (1 Tall Large Article + 2 Stacked Articles) ─── -->
-      <div class="magazine-grid-row-1">
-
-        <!-- Article 1: Cloud Computing (Large Tall Feature) -->
-        <article class="insight-article-card card-tall reveal-left" data-category="cloud">
-          <div class="card-inner-tall">
-            <div class="insight-img-frame tall-frame">
+        <!-- Topic 2: Cloud Computing -->
+        <article class="insight-article-card reveal-up" data-category="cloud">
+          <div class="card-inner-uniform">
+            <div class="insight-img-frame">
               <img src="assets/images/cloud-computing.jpg" alt="Building a Cloud Foundation for Long-Term Growth" class="insight-media-img" loading="lazy">
               <div class="insight-media-overlay"></div>
               <span class="reading-time-pill"><i class="fas fa-clock"></i> 5 min read</span>
             </div>
-
             <div class="card-content-body">
               <div class="article-meta-header">
                 <span class="article-category-tag cat-cloud">
@@ -209,108 +187,86 @@
                 </span>
                 <span class="article-pub-date">August 2026</span>
               </div>
-
-              <h3 class="article-title">
-                Building a Cloud Foundation for Long-Term Growth
-              </h3>
-
+              <h3 class="article-title">Building a Cloud Foundation for Long-Term Growth</h3>
               <p class="article-summary">
-                How modern cloud strategies help organizations improve scalability, resilience, flexibility, and operational efficiency across distributed enterprise ecosystems.
+                How modern cloud topologies help organizations improve scalability, resilience, flexibility, and operational efficiency across distributed systems.
               </p>
-
-              <button type="button" class="btn-read-inline" data-open-insight-modal="cloud">
-                <span>Read Insight</span>
-                <i class="fas fa-arrow-right"></i>
-              </button>
+              <div class="article-card-bottom">
+                <button type="button" class="btn-read-inline" data-open-insight-modal="cloud">
+                  <span>Read Insight</span>
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
             </div>
           </div>
         </article>
 
-        <!-- Stacked 2 Articles (Cybersecurity & Digital Transformation) -->
-        <div class="magazine-stacked-col reveal-right">
-
-          <!-- Article 2: Cybersecurity -->
-          <article class="insight-article-card card-horizontal-compact" data-category="cybersecurity">
-            <div class="card-inner-horizontal">
-              <div class="insight-img-frame compact-frame">
-                <img src="assets/images/cybersecurity-insight.jpg" alt="Preparing Businesses for the Next Generation of Cyber Threats" class="insight-media-img" loading="lazy">
-                <div class="insight-media-overlay"></div>
-                <span class="reading-time-pill"><i class="fas fa-clock"></i> 4 min read</span>
+        <!-- Topic 3: Cybersecurity -->
+        <article class="insight-article-card reveal-up" data-category="cybersecurity">
+          <div class="card-inner-uniform">
+            <div class="insight-img-frame">
+              <img src="assets/images/cybersecurity-insight.jpg" alt="Preparing Businesses for Next-Gen Cyber Threats" class="insight-media-img" loading="lazy">
+              <div class="insight-media-overlay"></div>
+              <span class="reading-time-pill"><i class="fas fa-clock"></i> 4 min read</span>
+            </div>
+            <div class="card-content-body">
+              <div class="article-meta-header">
+                <span class="article-category-tag cat-cybersecurity">
+                  <i class="fas fa-shield-halved"></i> CYBERSECURITY
+                </span>
+                <span class="article-pub-date">August 2026</span>
               </div>
-
-              <div class="card-content-body">
-                <div class="article-meta-header">
-                  <span class="article-category-tag cat-cybersecurity">
-                    <i class="fas fa-shield-halved"></i> CYBERSECURITY
-                  </span>
-                  <span class="article-pub-date">August 2026</span>
-                </div>
-
-                <h3 class="article-title">
-                  Preparing Businesses for the Next Generation of Cyber Threats
-                </h3>
-
-                <p class="article-summary">
-                  Understanding how proactive security strategies can protect applications, infrastructure, data, and digital operations with zero-trust protocols.
-                </p>
-
+              <h3 class="article-title">Preparing Businesses for Next-Gen Cyber Threats</h3>
+              <p class="article-summary">
+                Proactive zero-trust architectures and automated SOC telemetry that protect applications, infrastructure, and distributed enterprise data.
+              </p>
+              <div class="article-card-bottom">
                 <button type="button" class="btn-read-inline" data-open-insight-modal="cybersecurity">
                   <span>Read Insight</span>
                   <i class="fas fa-arrow-right"></i>
                 </button>
               </div>
             </div>
-          </article>
+          </div>
+        </article>
 
-          <!-- Article 3: Digital Transformation -->
-          <article class="insight-article-card card-horizontal-compact" data-category="digital-transformation">
-            <div class="card-inner-horizontal">
-              <div class="insight-img-frame compact-frame">
-                <img src="assets/images/digital-transformation.jpg" alt="Why Modernization Is Becoming a Business Imperative" class="insight-media-img" loading="lazy">
-                <div class="insight-media-overlay"></div>
-                <span class="reading-time-pill"><i class="fas fa-clock"></i> 5 min read</span>
+        <!-- Topic 4: Digital Transformation -->
+        <article class="insight-article-card reveal-up" data-category="digital-transformation">
+          <div class="card-inner-uniform">
+            <div class="insight-img-frame">
+              <img src="assets/images/digital-transformation.jpg" alt="Why Modernization Is a Business Imperative" class="insight-media-img" loading="lazy">
+              <div class="insight-media-overlay"></div>
+              <span class="reading-time-pill"><i class="fas fa-clock"></i> 5 min read</span>
+            </div>
+            <div class="card-content-body">
+              <div class="article-meta-header">
+                <span class="article-category-tag cat-transformation">
+                  <i class="fas fa-arrows-spin"></i> DIGITAL TRANSFORMATION
+                </span>
+                <span class="article-pub-date">July 2026</span>
               </div>
-
-              <div class="card-content-body">
-                <div class="article-meta-header">
-                  <span class="article-category-tag cat-transformation">
-                    <i class="fas fa-arrows-spin"></i> DIGITAL TRANSFORMATION
-                  </span>
-                  <span class="article-pub-date">July 2026</span>
-                </div>
-
-                <h3 class="article-title">
-                  Why Modernization Is Becoming a Business Imperative
-                </h3>
-
-                <p class="article-summary">
-                  How organizations can move beyond legacy systems and create connected, efficient, digital-first operations that drive tangible market differentiation.
-                </p>
-
+              <h3 class="article-title">Why Modernization Is a Business Imperative</h3>
+              <p class="article-summary">
+                How enterprises eliminate legacy technical debt through strangler patterns and composable API architectures for sustained agility.
+              </p>
+              <div class="article-card-bottom">
                 <button type="button" class="btn-read-inline" data-open-insight-modal="modernization">
                   <span>Read Insight</span>
                   <i class="fas fa-arrow-right"></i>
                 </button>
               </div>
             </div>
-          </article>
+          </div>
+        </article>
 
-        </div>
-
-      </div>
-
-      <!-- ─── EDITORIAL ROW 2 (Two Equal Horizontal Split Articles) ─── -->
-      <div class="magazine-grid-row-2">
-
-        <!-- Article 4: Industry 4.0 -->
-        <article class="insight-article-card card-half-horizontal reveal-left" data-category="industry-40">
-          <div class="card-inner-half">
-            <div class="insight-img-frame half-frame">
-              <img src="assets/images/smart-manufacturing.png" alt="How Connected Technologies Are Changing Manufacturing" class="insight-media-img" loading="lazy">
+        <!-- Topic 5: Industry 4.0 -->
+        <article class="insight-article-card reveal-up" data-category="industry-40">
+          <div class="card-inner-uniform">
+            <div class="insight-img-frame">
+              <img src="assets/images/smart-manufacturing.png" alt="How Connected Technologies Change Manufacturing" class="insight-media-img" loading="lazy">
               <div class="insight-media-overlay"></div>
               <span class="reading-time-pill"><i class="fas fa-clock"></i> 6 min read</span>
             </div>
-
             <div class="card-content-body">
               <div class="article-meta-header">
                 <span class="article-category-tag cat-industry">
@@ -318,32 +274,28 @@
                 </span>
                 <span class="article-pub-date">July 2026</span>
               </div>
-
-              <h3 class="article-title">
-                How Connected Technologies Are Changing Manufacturing
-              </h3>
-
+              <h3 class="article-title">How Connected Technologies Change Manufacturing</h3>
               <p class="article-summary">
-                Exploring how IoT, automation, analytics, and intelligent systems are transforming industrial operations and enabling autonomous shopfloors.
+                Industrial IoT, digital twin telemetry, and autonomous quality control driving real-time intelligence across modern shopfloors.
               </p>
-
-              <button type="button" class="btn-read-inline" data-open-insight-modal="industry40">
-                <span>Read Insight</span>
-                <i class="fas fa-arrow-right"></i>
-              </button>
+              <div class="article-card-bottom">
+                <button type="button" class="btn-read-inline" data-open-insight-modal="industry40">
+                  <span>Read Insight</span>
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
             </div>
           </div>
         </article>
 
-        <!-- Article 5: Emerging Technology -->
-        <article class="insight-article-card card-half-horizontal reveal-right" data-category="emerging-tech">
-          <div class="card-inner-half">
-            <div class="insight-img-frame half-frame">
-              <img src="assets/images/emerging-tech.jpg" alt="Technology Trends That Will Shape the Next Business Era" class="insight-media-img" loading="lazy">
+        <!-- Topic 6: Emerging Technology -->
+        <article class="insight-article-card reveal-up" data-category="emerging-tech">
+          <div class="card-inner-uniform">
+            <div class="insight-img-frame">
+              <img src="assets/images/emerging-tech.jpg" alt="Technology Trends Shaping the Next Business Era" class="insight-media-img" loading="lazy">
               <div class="insight-media-overlay"></div>
               <span class="reading-time-pill"><i class="fas fa-clock"></i> 7 min read</span>
             </div>
-
             <div class="card-content-body">
               <div class="article-meta-header">
                 <span class="article-category-tag cat-emerging">
@@ -351,25 +303,21 @@
                 </span>
                 <span class="article-pub-date">June 2026</span>
               </div>
-
-              <h3 class="article-title">
-                Technology Trends That Will Shape the Next Business Era
-              </h3>
-
+              <h3 class="article-title">Technology Trends Shaping the Next Business Era</h3>
               <p class="article-summary">
-                A look at emerging technologies, quantum computing, autonomous agents, and the opportunities they create for enterprises preparing for the decade ahead.
+                A forward-looking analysis of quantum readiness, synthetic intelligence, and sustainable low-carbon cloud computing models.
               </p>
-
-              <button type="button" class="btn-read-inline" data-open-insight-modal="emerging">
-                <span>Read Insight</span>
-                <i class="fas fa-arrow-right"></i>
-              </button>
+              <div class="article-card-bottom">
+                <button type="button" class="btn-read-inline" data-open-insight-modal="emerging">
+                  <span>Read Insight</span>
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
             </div>
           </div>
         </article>
 
       </div>
-
     </div>
   </main>
 
