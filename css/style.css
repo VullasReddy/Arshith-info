@@ -2749,45 +2749,16 @@ body.page-infotech #why-us .section-subtitle {
   transition: height 0.3s ease, opacity 0.3s ease;
 }
 
-@media (hover: hover) and (pointer: fine) {
-  .why-card:hover {
-    transform: translateY(-8px);
-    border-color: #38bdf8 !important;
-    box-shadow: 0 24px 50px -10px rgba(15, 23, 42, 0.16), 0 0 25px rgba(2, 132, 199, 0.18) !important;
-    background: #ffffff !important;
-  }
-
-  .why-card:hover::before {
-    height: 4.5px;
-  }
-
-  .why-card:hover .why-icon {
-    transform: scale(1.08) rotate(4deg);
-    border-color: rgba(255, 255, 255, 0.8) !important;
-    background: linear-gradient(135deg, #0284c7 0%, #00f2fe 100%) !important;
-    color: #ffffff !important;
-    box-shadow: 0 6px 20px rgba(0, 242, 254, 0.45) !important;
-  }
-
-  .why-card:hover h3 {
-    color: #0284c7 !important;
-  }
-}
-
 .why-icon {
   width: 52px;
   height: 52px;
   border-radius: 14px;
-  background: linear-gradient(135deg, rgba(2, 132, 199, 0.1) 0%, rgba(0, 242, 254, 0.15) 100%) !important;
-  border: 1.5px solid rgba(2, 132, 199, 0.25) !important;
-  color: #0284c7 !important;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.35rem;
   margin-bottom: 1.3rem;
   flex-shrink: 0;
-  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.1) !important;
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -2798,7 +2769,6 @@ body.page-infotech #why-us .section-subtitle {
   min-height: 1.8rem;
   display: flex;
   align-items: center;
-  color: #0f172a !important;
   text-shadow: none !important;
   transition: color 0.3s ease;
 }
@@ -2810,6 +2780,223 @@ body.page-infotech #why-us .section-subtitle {
   margin: 0;
   color: #475569 !important;
   text-shadow: none !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .why-card:hover {
+    transform: translateY(-8px);
+    background: #ffffff !important;
+  }
+  .why-card:hover::before {
+    height: 4.5px;
+  }
+  .why-card:hover .why-icon {
+    transform: scale(1.08) rotate(4deg);
+    border-color: rgba(255, 255, 255, 0.8) !important;
+    color: #ffffff !important;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────
+   6 INDIVIDUAL CARD PROFESSIONAL COLOR THEMES
+   ───────────────────────────────────────────────────────── */
+
+/* 1. Outcome-First Approach → Blue */
+.why-grid > .why-card:nth-child(1)::before,
+.why-card.card-blue::before {
+  background: linear-gradient(90deg, #0284c7 0%, #00f2fe 50%, #38bdf8 100%);
+}
+.why-grid > .why-card:nth-child(1) .why-icon,
+.why-card.card-blue .why-icon {
+  background: rgba(2, 132, 199, 0.08) !important;
+  border: 1.5px solid rgba(2, 132, 199, 0.22) !important;
+  color: #0284c7 !important;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.08) !important;
+}
+.why-grid > .why-card:nth-child(1) h3,
+.why-card.card-blue h3 {
+  color: #0284c7 !important;
+}
+@media (hover: hover) and (pointer: fine) {
+  .why-grid > .why-card:nth-child(1):hover,
+  .why-card.card-blue:hover {
+    border-color: #38bdf8 !important;
+    box-shadow: 0 24px 50px -10px rgba(15, 23, 42, 0.16), 0 0 25px rgba(2, 132, 199, 0.18) !important;
+  }
+  .why-grid > .why-card:nth-child(1):hover .why-icon,
+  .why-card.card-blue:hover .why-icon {
+    background: linear-gradient(135deg, #0284c7 0%, #00f2fe 100%) !important;
+    box-shadow: 0 6px 20px rgba(0, 242, 254, 0.45) !important;
+  }
+  .why-grid > .why-card:nth-child(1):hover h3,
+  .why-card.card-blue:hover h3 {
+    color: #0369a1 !important;
+  }
+}
+
+/* 2. Dedicated Expert Teams → Purple */
+.why-grid > .why-card:nth-child(2)::before,
+.why-card.card-purple::before {
+  background: linear-gradient(90deg, #7c3aed 0%, #a855f7 50%, #c084fc 100%);
+}
+.why-grid > .why-card:nth-child(2) .why-icon,
+.why-card.card-purple .why-icon {
+  background: rgba(124, 58, 237, 0.08) !important;
+  border: 1.5px solid rgba(124, 58, 237, 0.22) !important;
+  color: #7c3aed !important;
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.08) !important;
+}
+.why-grid > .why-card:nth-child(2) h3,
+.why-card.card-purple h3 {
+  color: #7c3aed !important;
+}
+@media (hover: hover) and (pointer: fine) {
+  .why-grid > .why-card:nth-child(2):hover,
+  .why-card.card-purple:hover {
+    border-color: #a855f7 !important;
+    box-shadow: 0 24px 50px -10px rgba(15, 23, 42, 0.16), 0 0 25px rgba(124, 58, 237, 0.18) !important;
+  }
+  .why-grid > .why-card:nth-child(2):hover .why-icon,
+  .why-card.card-purple:hover .why-icon {
+    background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%) !important;
+    box-shadow: 0 6px 20px rgba(168, 85, 247, 0.45) !important;
+  }
+  .why-grid > .why-card:nth-child(2):hover h3,
+  .why-card.card-purple:hover h3 {
+    color: #6d28d9 !important;
+  }
+}
+
+/* 3. Security by Design → Red */
+.why-grid > .why-card:nth-child(3)::before,
+.why-card.card-red::before {
+  background: linear-gradient(90deg, #e11d48 0%, #f43f5e 50%, #fb7185 100%);
+}
+.why-grid > .why-card:nth-child(3) .why-icon,
+.why-card.card-red .why-icon {
+  background: rgba(225, 29, 72, 0.08) !important;
+  border: 1.5px solid rgba(225, 29, 72, 0.22) !important;
+  color: #e11d48 !important;
+  box-shadow: 0 4px 12px rgba(225, 29, 72, 0.08) !important;
+}
+.why-grid > .why-card:nth-child(3) h3,
+.why-card.card-red h3 {
+  color: #e11d48 !important;
+}
+@media (hover: hover) and (pointer: fine) {
+  .why-grid > .why-card:nth-child(3):hover,
+  .why-card.card-red:hover {
+    border-color: #f43f5e !important;
+    box-shadow: 0 24px 50px -10px rgba(15, 23, 42, 0.16), 0 0 25px rgba(225, 29, 72, 0.18) !important;
+  }
+  .why-grid > .why-card:nth-child(3):hover .why-icon,
+  .why-card.card-red:hover .why-icon {
+    background: linear-gradient(135deg, #e11d48 0%, #f43f5e 100%) !important;
+    box-shadow: 0 6px 20px rgba(244, 63, 94, 0.45) !important;
+  }
+  .why-grid > .why-card:nth-child(3):hover h3,
+  .why-card.card-red:hover h3 {
+    color: #be123c !important;
+  }
+}
+
+/* 4. Agile Delivery → Green */
+.why-grid > .why-card:nth-child(4)::before,
+.why-card.card-green::before {
+  background: linear-gradient(90deg, #059669 0%, #10b981 50%, #34d399 100%);
+}
+.why-grid > .why-card:nth-child(4) .why-icon,
+.why-card.card-green .why-icon {
+  background: rgba(5, 150, 105, 0.08) !important;
+  border: 1.5px solid rgba(5, 150, 105, 0.22) !important;
+  color: #059669 !important;
+  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.08) !important;
+}
+.why-grid > .why-card:nth-child(4) h3,
+.why-card.card-green h3 {
+  color: #059669 !important;
+}
+@media (hover: hover) and (pointer: fine) {
+  .why-grid > .why-card:nth-child(4):hover,
+  .why-card.card-green:hover {
+    border-color: #10b981 !important;
+    box-shadow: 0 24px 50px -10px rgba(15, 23, 42, 0.16), 0 0 25px rgba(5, 150, 105, 0.18) !important;
+  }
+  .why-grid > .why-card:nth-child(4):hover .why-icon,
+  .why-card.card-green:hover .why-icon {
+    background: linear-gradient(135deg, #059669 0%, #10b981 100%) !important;
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.45) !important;
+  }
+  .why-grid > .why-card:nth-child(4):hover h3,
+  .why-card.card-green:hover h3 {
+    color: #047857 !important;
+  }
+}
+
+/* 5. 24/7 Support → Orange */
+.why-grid > .why-card:nth-child(5)::before,
+.why-card.card-orange::before {
+  background: linear-gradient(90deg, #ea580c 0%, #f97316 50%, #fb923c 100%);
+}
+.why-grid > .why-card:nth-child(5) .why-icon,
+.why-card.card-orange .why-icon {
+  background: rgba(234, 88, 12, 0.08) !important;
+  border: 1.5px solid rgba(234, 88, 12, 0.22) !important;
+  color: #ea580c !important;
+  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.08) !important;
+}
+.why-grid > .why-card:nth-child(5) h3,
+.why-card.card-orange h3 {
+  color: #ea580c !important;
+}
+@media (hover: hover) and (pointer: fine) {
+  .why-grid > .why-card:nth-child(5):hover,
+  .why-card.card-orange:hover {
+    border-color: #f97316 !important;
+    box-shadow: 0 24px 50px -10px rgba(15, 23, 42, 0.16), 0 0 25px rgba(234, 88, 12, 0.18) !important;
+  }
+  .why-grid > .why-card:nth-child(5):hover .why-icon,
+  .why-card.card-orange:hover .why-icon {
+    background: linear-gradient(135deg, #ea580c 0%, #f97316 100%) !important;
+    box-shadow: 0 6px 20px rgba(249, 115, 22, 0.45) !important;
+  }
+  .why-grid > .why-card:nth-child(5):hover h3,
+  .why-card.card-orange:hover h3 {
+    color: #c2410c !important;
+  }
+}
+
+/* 6. Sustainable Tech → Teal */
+.why-grid > .why-card:nth-child(6)::before,
+.why-card.card-teal::before {
+  background: linear-gradient(90deg, #0d9488 0%, #14b8a6 50%, #2dd4bf 100%);
+}
+.why-grid > .why-card:nth-child(6) .why-icon,
+.why-card.card-teal .why-icon {
+  background: rgba(13, 148, 136, 0.08) !important;
+  border: 1.5px solid rgba(13, 148, 136, 0.22) !important;
+  color: #0d9488 !important;
+  box-shadow: 0 4px 12px rgba(13, 148, 136, 0.08) !important;
+}
+.why-grid > .why-card:nth-child(6) h3,
+.why-card.card-teal h3 {
+  color: #0d9488 !important;
+}
+@media (hover: hover) and (pointer: fine) {
+  .why-grid > .why-card:nth-child(6):hover,
+  .why-card.card-teal:hover {
+    border-color: #14b8a6 !important;
+    box-shadow: 0 24px 50px -10px rgba(15, 23, 42, 0.16), 0 0 25px rgba(13, 148, 136, 0.18) !important;
+  }
+  .why-grid > .why-card:nth-child(6):hover .why-icon,
+  .why-card.card-teal:hover .why-icon {
+    background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%) !important;
+    box-shadow: 0 6px 20px rgba(20, 184, 166, 0.45) !important;
+  }
+  .why-grid > .why-card:nth-child(6):hover h3,
+  .why-card.card-teal:hover h3 {
+    color: #0f766e !important;
+  }
 }
 
 /* ===================================================
