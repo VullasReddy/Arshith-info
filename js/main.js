@@ -1033,10 +1033,12 @@ document.addEventListener('DOMContentLoaded', () => {
         jobItems.forEach(job => {
           const category = job.getAttribute('data-job-category');
           if (filterValue === 'all' || category === filterValue) {
-            job.style.display = '';
+            job.classList.remove('is-hidden');
+            job.style.display = 'flex';
             job.style.opacity = '1';
             job.style.transform = 'translateY(0)';
           } else {
+            job.classList.add('is-hidden');
             job.style.display = 'none';
           }
         });

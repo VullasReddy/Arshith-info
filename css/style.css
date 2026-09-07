@@ -10222,34 +10222,69 @@ body.page-careers .pillar-icon {
   color: #ea580c !important;
 }
 
-/* 5. Section 5: Openings Notice, Filter Bar, & Job Cards */
-.openings-demo-notice {
-  background: #f8fafc !important;
-  border: 1px solid #cbd5e1 !important;
-  color: #475569 !important;
+/* 5. Section 5: Filter Bar & Job Cards */
+.careers-filter-bar,
+body.page-careers .careers-filter-bar {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 50px !important;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06) !important;
+  padding: 0.9rem 1.4rem !important;
+  margin-bottom: 2.5rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 1.25rem !important;
 }
 
-.openings-demo-notice i {
+.careers-filter-bar .career-filter-label,
+body.page-careers .career-filter-label {
+  color: #0f172a !important;
+  font-weight: 800 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  font-size: 0.85rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.06em !important;
+}
+
+.careers-filter-bar .career-filter-label i {
   color: #0284c7 !important;
 }
 
-.careers-filter-bar .career-filter-label {
-  color: #334155 !important;
-  font-weight: 700 !important;
-}
-
-.careers-filter-bar .career-pill {
+.careers-filter-bar .career-pill,
+body.page-careers .career-pill {
   color: #475569 !important;
   background: #f8fafc !important;
   border: 1px solid #cbd5e1 !important;
+  font-weight: 600 !important;
+  padding: 0.5rem 1.2rem !important;
+  border-radius: 50px !important;
+  font-size: 0.85rem !important;
+  cursor: pointer !important;
+  transition: all 0.25s ease !important;
 }
 
 .careers-filter-bar .career-pill:hover,
-.careers-filter-bar .career-pill.active {
+body.page-careers .career-pill:hover {
+  color: #0284c7 !important;
+  background: #f0f9ff !important;
+  border-color: #0284c7 !important;
+}
+
+.careers-filter-bar .career-pill.active,
+body.page-careers .career-pill.active {
   color: #ffffff !important;
   background: #0284c7 !important;
   border-color: #0284c7 !important;
-  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.3) !important;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35) !important;
+}
+
+.jobs-list-container {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1.4rem !important;
 }
 
 .jobs-list-container .job-card-item,
@@ -10258,8 +10293,19 @@ body.theme-page-cyber-blue .job-card-item {
   background: #ffffff !important;
   border: 1px solid #e2e8f0 !important;
   border-radius: 20px !important;
+  padding: 2.2rem 2.5rem !important;
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06), 0 2px 8px rgba(15, 23, 42, 0.04) !important;
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  display: flex;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 2rem !important;
+}
+
+.jobs-list-container .job-card-item.is-hidden,
+body.page-careers .job-card-item.is-hidden,
+.job-card-item[style*="display: none"] {
+  display: none !important;
 }
 
 .jobs-list-container .job-card-item:hover,
@@ -10273,23 +10319,36 @@ body.theme-page-cyber-blue .job-card-item:hover {
 .job-card-item .job-title,
 body.page-careers .job-title {
   color: #0f172a !important;
+  font-size: 1.35rem !important;
+  font-weight: 800 !important;
+  margin-bottom: 0.5rem !important;
 }
 
 .job-card-item:hover .job-title,
-body.page-careers .job-card-item:hover .job-title {
+body.page-careers .job-title:hover {
   color: #0284c7 !important;
 }
 
 .job-card-item .job-snippet,
 body.page-careers .job-snippet {
-  color: #334155 !important;
+  color: #475569 !important;
+  font-size: 0.95rem !important;
+  line-height: 1.6 !important;
+  margin-bottom: 1rem !important;
 }
 
 .job-meta-row .meta-tag,
 body.page-careers .meta-tag {
-  background: #f8fafc !important;
-  border: 1px solid #cbd5e1 !important;
-  color: #475569 !important;
+  background: #f1f5f9 !important;
+  border: 1px solid #e2e8f0 !important;
+  color: #334155 !important;
+  font-size: 0.82rem !important;
+  font-weight: 600 !important;
+  padding: 0.35rem 0.85rem !important;
+  border-radius: 50px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.4rem !important;
 }
 
 .job-meta-row .meta-tag i,
@@ -10304,15 +10363,15 @@ body.page-careers .meta-tag i {
 }
 
 .job-dept-tag.tag-ai {
-  color: #0284c7 !important;
-  background: #e0f2fe !important;
-  border: 1px solid #bae6fd !important;
+  color: #7c3aed !important;
+  background: #f3e8ff !important;
+  border: 1px solid #e9d5ff !important;
 }
 
 .job-dept-tag.tag-cloud {
-  color: #2563eb !important;
-  background: #dbeafe !important;
-  border: 1px solid #bfdbfe !important;
+  color: #0284c7 !important;
+  background: #e0f2fe !important;
+  border: 1px solid #bae6fd !important;
 }
 
 .job-dept-tag.tag-cyber {
@@ -10322,9 +10381,9 @@ body.page-careers .meta-tag i {
 }
 
 .job-dept-tag.tag-design {
-  color: #7c3aed !important;
-  background: #f3e8ff !important;
-  border: 1px solid #e9d5ff !important;
+  color: #d97706 !important;
+  background: #fef3c7 !important;
+  border: 1px solid #fde68a !important;
 }
 
 .job-dept-tag.tag-business {
@@ -10335,15 +10394,24 @@ body.page-careers .meta-tag i {
 
 .btn-view-job,
 body.page-careers .btn-view-job {
-  background: #0f172a !important;
+  background: #0284c7 !important;
   color: #ffffff !important;
-  border: 1px solid #0f172a !important;
+  border: 1px solid #0284c7 !important;
+  font-weight: 700 !important;
+  padding: 0.75rem 1.5rem !important;
+  border-radius: 50px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer !important;
+  white-space: nowrap !important;
 }
 
 .btn-view-job:hover,
 body.page-careers .btn-view-job:hover {
-  background: #0284c7 !important;
-  border-color: #0284c7 !important;
+  background: #0369a1 !important;
+  border-color: #0369a1 !important;
   color: #ffffff !important;
   transform: translateY(-2px) !important;
   box-shadow: 0 6px 18px rgba(2, 132, 199, 0.35) !important;
