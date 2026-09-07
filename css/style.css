@@ -10019,8 +10019,55 @@ body.page-careers .why-feature-card:hover {
 
 .why-feature-card .why-card-title,
 body.page-careers .why-card-title {
-  color: #0f172a !important;
   font-weight: 800 !important;
+}
+
+/* 01 GROW - Blue */
+.why-feature-card.card-grow .why-icon-circle,
+.why-interactive-grid > .why-feature-card:nth-child(1) .why-icon-circle {
+  background: rgba(2, 132, 199, 0.08) !important;
+  border: 1px solid rgba(2, 132, 199, 0.25) !important;
+  color: #0284c7 !important;
+}
+.why-feature-card.card-grow .why-card-title,
+.why-interactive-grid > .why-feature-card:nth-child(1) .why-card-title {
+  color: #0284c7 !important;
+}
+
+/* 02 INNOVATE - Purple */
+.why-feature-card.card-innovate .why-icon-circle,
+.why-interactive-grid > .why-feature-card:nth-child(2) .why-icon-circle {
+  background: rgba(124, 58, 237, 0.08) !important;
+  border: 1px solid rgba(124, 58, 237, 0.25) !important;
+  color: #7c3aed !important;
+}
+.why-feature-card.card-innovate .why-card-title,
+.why-interactive-grid > .why-feature-card:nth-child(2) .why-card-title {
+  color: #7c3aed !important;
+}
+
+/* 03 COLLABORATE - Green */
+.why-feature-card.card-collaborate .why-icon-circle,
+.why-interactive-grid > .why-feature-card:nth-child(3) .why-icon-circle {
+  background: rgba(5, 150, 105, 0.08) !important;
+  border: 1px solid rgba(5, 150, 105, 0.25) !important;
+  color: #059669 !important;
+}
+.why-feature-card.card-collaborate .why-card-title,
+.why-interactive-grid > .why-feature-card:nth-child(3) .why-card-title {
+  color: #059669 !important;
+}
+
+/* 04 MAKE AN IMPACT - Orange */
+.why-feature-card.card-impact .why-icon-circle,
+.why-interactive-grid > .why-feature-card:nth-child(4) .why-icon-circle {
+  background: rgba(234, 88, 12, 0.08) !important;
+  border: 1px solid rgba(234, 88, 12, 0.25) !important;
+  color: #ea580c !important;
+}
+.why-feature-card.card-impact .why-card-title,
+.why-interactive-grid > .why-feature-card:nth-child(4) .why-card-title {
+  color: #ea580c !important;
 }
 
 .why-feature-card .why-card-number,
@@ -10048,13 +10095,6 @@ body.page-careers .why-card-points li i {
   color: #0284c7 !important;
 }
 
-.why-feature-card .why-icon-circle,
-body.page-careers .why-icon-circle {
-  background: rgba(2, 132, 199, 0.08) !important;
-  border: 1px solid rgba(2, 132, 199, 0.25) !important;
-  color: #0284c7 !important;
-}
-
 /* 4. Section 4: Culture Value Pillars (Curiosity, Ownership, Collaboration, Continuous Improvement) */
 .culture-value-pillar,
 body.page-careers .culture-value-pillar,
@@ -10077,7 +10117,6 @@ body.page-careers .culture-value-pillar:hover {
 
 .culture-value-pillar .pillar-title,
 body.page-careers .pillar-title {
-  color: #0f172a !important;
   font-weight: 800 !important;
 }
 
@@ -10088,20 +10127,99 @@ body.page-careers .pillar-desc {
 
 .culture-value-pillar .pillar-footer-tag,
 body.page-careers .pillar-footer-tag {
-  color: #0284c7 !important;
   font-weight: 800 !important;
 }
 
 .culture-value-pillar .pillar-icon,
 body.page-careers .pillar-icon {
+  width: 52px !important;
+  height: 52px !important;
+  border-radius: 14px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 1.3rem !important;
+  margin-bottom: 1.4rem !important;
+}
+
+/* Pillar 1: Curiosity - Blue */
+.culture-values-layout > .culture-value-pillar:nth-child(1) .pillar-icon,
+.culture-value-pillar.pillar-curiosity .pillar-icon {
   background: rgba(2, 132, 199, 0.08) !important;
   border: 1px solid rgba(2, 132, 199, 0.25) !important;
   color: #0284c7 !important;
 }
+.culture-values-layout > .culture-value-pillar:nth-child(1) .pillar-title,
+.culture-value-pillar.pillar-curiosity .pillar-title {
+  color: #0284c7 !important;
+}
+.culture-values-layout > .culture-value-pillar:nth-child(1) .pillar-top-accent,
+.culture-value-pillar.pillar-curiosity .pillar-top-accent {
+  background: linear-gradient(90deg, #0284c7 0%, #38bdf8 100%) !important;
+}
+.culture-values-layout > .culture-value-pillar:nth-child(1) .pillar-footer-tag,
+.culture-value-pillar.pillar-curiosity .pillar-footer-tag {
+  color: #0284c7 !important;
+}
 
-.culture-value-pillar .pillar-top-accent,
-body.page-careers .pillar-top-accent {
-  background: linear-gradient(90deg, #0284c7 0%, #00f2fe 100%) !important;
+/* Pillar 2: Ownership - Purple */
+.culture-values-layout > .culture-value-pillar:nth-child(2) .pillar-icon,
+.culture-value-pillar.pillar-ownership .pillar-icon {
+  background: rgba(124, 58, 237, 0.08) !important;
+  border: 1px solid rgba(124, 58, 237, 0.25) !important;
+  color: #7c3aed !important;
+}
+.culture-values-layout > .culture-value-pillar:nth-child(2) .pillar-title,
+.culture-value-pillar.pillar-ownership .pillar-title {
+  color: #7c3aed !important;
+}
+.culture-values-layout > .culture-value-pillar:nth-child(2) .pillar-top-accent,
+.culture-value-pillar.pillar-ownership .pillar-top-accent {
+  background: linear-gradient(90deg, #7c3aed 0%, #a78bfa 100%) !important;
+}
+.culture-values-layout > .culture-value-pillar:nth-child(2) .pillar-footer-tag,
+.culture-value-pillar.pillar-ownership .pillar-footer-tag {
+  color: #7c3aed !important;
+}
+
+/* Pillar 3: Collaboration - Green */
+.culture-values-layout > .culture-value-pillar:nth-child(3) .pillar-icon,
+.culture-value-pillar.pillar-collaboration .pillar-icon {
+  background: rgba(5, 150, 105, 0.08) !important;
+  border: 1px solid rgba(5, 150, 105, 0.25) !important;
+  color: #059669 !important;
+}
+.culture-values-layout > .culture-value-pillar:nth-child(3) .pillar-title,
+.culture-value-pillar.pillar-collaboration .pillar-title {
+  color: #059669 !important;
+}
+.culture-values-layout > .culture-value-pillar:nth-child(3) .pillar-top-accent,
+.culture-value-pillar.pillar-collaboration .pillar-top-accent {
+  background: linear-gradient(90deg, #059669 0%, #34d399 100%) !important;
+}
+.culture-values-layout > .culture-value-pillar:nth-child(3) .pillar-footer-tag,
+.culture-value-pillar.pillar-collaboration .pillar-footer-tag {
+  color: #059669 !important;
+}
+
+/* Pillar 4: Continuous Improvement - Orange */
+.culture-values-layout > .culture-value-pillar:nth-child(4) .pillar-icon,
+.culture-value-pillar.pillar-improvement .pillar-icon {
+  background: rgba(234, 88, 12, 0.08) !important;
+  border: 1px solid rgba(234, 88, 12, 0.25) !important;
+  color: #ea580c !important;
+}
+.culture-values-layout > .culture-value-pillar:nth-child(4) .pillar-title,
+.culture-value-pillar.pillar-improvement .pillar-title {
+  color: #ea580c !important;
+}
+.culture-values-layout > .culture-value-pillar:nth-child(4) .pillar-top-accent,
+.culture-value-pillar.pillar-improvement .pillar-top-accent {
+  background: linear-gradient(90deg, #ea580c 0%, #fb923c 100%) !important;
+}
+.culture-values-layout > .culture-value-pillar:nth-child(4) .pillar-footer-tag,
+.culture-value-pillar.pillar-improvement .pillar-footer-tag {
+  color: #ea580c !important;
 }
 
 /* 5. Section 5: Openings Notice, Filter Bar, & Job Cards */

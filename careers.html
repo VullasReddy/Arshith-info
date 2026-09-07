@@ -15,8 +15,147 @@
   <!-- FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="footer-premium.css">
+  <link rel="stylesheet" href="css/style.css?v=1.1">
+  <link rel="stylesheet" href="footer-premium.css?v=1.1">
+  <style>
+    /* Direct override for Why Feature Cards */
+    .why-interactive-grid > .why-feature-card:nth-child(1) .why-icon-circle,
+    .why-feature-card.card-grow .why-icon-circle {
+      background: rgba(2, 132, 199, 0.08) !important;
+      border: 1px solid rgba(2, 132, 199, 0.25) !important;
+      color: #0284c7 !important;
+    }
+    .why-interactive-grid > .why-feature-card:nth-child(1) .why-card-title,
+    .why-feature-card.card-grow .why-card-title {
+      color: #0284c7 !important;
+    }
+
+    .why-interactive-grid > .why-feature-card:nth-child(2) .why-icon-circle,
+    .why-feature-card.card-innovate .why-icon-circle {
+      background: rgba(124, 58, 237, 0.08) !important;
+      border: 1px solid rgba(124, 58, 237, 0.25) !important;
+      color: #7c3aed !important;
+    }
+    .why-interactive-grid > .why-feature-card:nth-child(2) .why-card-title,
+    .why-feature-card.card-innovate .why-card-title {
+      color: #7c3aed !important;
+    }
+
+    .why-interactive-grid > .why-feature-card:nth-child(3) .why-icon-circle,
+    .why-feature-card.card-collaborate .why-icon-circle {
+      background: rgba(5, 150, 105, 0.08) !important;
+      border: 1px solid rgba(5, 150, 105, 0.25) !important;
+      color: #059669 !important;
+    }
+    .why-interactive-grid > .why-feature-card:nth-child(3) .why-card-title,
+    .why-feature-card.card-collaborate .why-card-title {
+      color: #059669 !important;
+    }
+
+    .why-interactive-grid > .why-feature-card:nth-child(4) .why-icon-circle,
+    .why-feature-card.card-impact .why-icon-circle {
+      background: rgba(234, 88, 12, 0.08) !important;
+      border: 1px solid rgba(234, 88, 12, 0.25) !important;
+      color: #ea580c !important;
+    }
+    .why-interactive-grid > .why-feature-card:nth-child(4) .why-card-title,
+    .why-feature-card.card-impact .why-card-title {
+      color: #ea580c !important;
+    }
+
+    /* Culture Value Pillars - Small clean icon box matching Why cards */
+    .culture-value-pillar .pillar-icon,
+    body.page-careers .pillar-icon {
+      width: 52px !important;
+      height: 52px !important;
+      border-radius: 14px !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      font-size: 1.3rem !important;
+      margin-bottom: 1.4rem !important;
+    }
+
+    /* Pillar 1: Curiosity - Blue */
+    .culture-values-layout > .culture-value-pillar:nth-child(1) .pillar-icon,
+    .culture-value-pillar.pillar-curiosity .pillar-icon {
+      background: rgba(2, 132, 199, 0.08) !important;
+      border: 1px solid rgba(2, 132, 199, 0.25) !important;
+      color: #0284c7 !important;
+    }
+    .culture-values-layout > .culture-value-pillar:nth-child(1) .pillar-title,
+    .culture-value-pillar.pillar-curiosity .pillar-title {
+      color: #0284c7 !important;
+    }
+    .culture-values-layout > .culture-value-pillar:nth-child(1) .pillar-top-accent,
+    .culture-value-pillar.pillar-curiosity .pillar-top-accent {
+      background: linear-gradient(90deg, #0284c7 0%, #38bdf8 100%) !important;
+    }
+    .culture-values-layout > .culture-value-pillar:nth-child(1) .pillar-footer-tag,
+    .culture-value-pillar.pillar-curiosity .pillar-footer-tag {
+      color: #0284c7 !important;
+    }
+
+    /* Pillar 2: Ownership - Purple */
+    .culture-values-layout > .culture-value-pillar:nth-child(2) .pillar-icon,
+    .culture-value-pillar.pillar-ownership .pillar-icon {
+      background: rgba(124, 58, 237, 0.08) !important;
+      border: 1px solid rgba(124, 58, 237, 0.25) !important;
+      color: #7c3aed !important;
+    }
+    .culture-values-layout > .culture-value-pillar:nth-child(2) .pillar-title,
+    .culture-value-pillar.pillar-ownership .pillar-title {
+      color: #7c3aed !important;
+    }
+    .culture-values-layout > .culture-value-pillar:nth-child(2) .pillar-top-accent,
+    .culture-value-pillar.pillar-ownership .pillar-top-accent {
+      background: linear-gradient(90deg, #7c3aed 0%, #a78bfa 100%) !important;
+    }
+    .culture-values-layout > .culture-value-pillar:nth-child(2) .pillar-footer-tag,
+    .culture-value-pillar.pillar-ownership .pillar-footer-tag {
+      color: #7c3aed !important;
+    }
+
+    /* Pillar 3: Collaboration - Green */
+    .culture-values-layout > .culture-value-pillar:nth-child(3) .pillar-icon,
+    .culture-value-pillar.pillar-collaboration .pillar-icon {
+      background: rgba(5, 150, 105, 0.08) !important;
+      border: 1px solid rgba(5, 150, 105, 0.25) !important;
+      color: #059669 !important;
+    }
+    .culture-values-layout > .culture-value-pillar:nth-child(3) .pillar-title,
+    .culture-value-pillar.pillar-collaboration .pillar-title {
+      color: #059669 !important;
+    }
+    .culture-values-layout > .culture-value-pillar:nth-child(3) .pillar-top-accent,
+    .culture-value-pillar.pillar-collaboration .pillar-top-accent {
+      background: linear-gradient(90deg, #059669 0%, #34d399 100%) !important;
+    }
+    .culture-values-layout > .culture-value-pillar:nth-child(3) .pillar-footer-tag,
+    .culture-value-pillar.pillar-collaboration .pillar-footer-tag {
+      color: #059669 !important;
+    }
+
+    /* Pillar 4: Continuous Improvement - Orange */
+    .culture-values-layout > .culture-value-pillar:nth-child(4) .pillar-icon,
+    .culture-value-pillar.pillar-improvement .pillar-icon {
+      background: rgba(234, 88, 12, 0.08) !important;
+      border: 1px solid rgba(234, 88, 12, 0.25) !important;
+      color: #ea580c !important;
+    }
+    .culture-values-layout > .culture-value-pillar:nth-child(4) .pillar-title,
+    .culture-value-pillar.pillar-improvement .pillar-title {
+      color: #ea580c !important;
+    }
+    .culture-values-layout > .culture-value-pillar:nth-child(4) .pillar-top-accent,
+    .culture-value-pillar.pillar-improvement .pillar-top-accent {
+      background: linear-gradient(90deg, #ea580c 0%, #fb923c 100%) !important;
+    }
+    .culture-values-layout > .culture-value-pillar:nth-child(4) .pillar-footer-tag,
+    .culture-value-pillar.pillar-improvement .pillar-footer-tag {
+      color: #ea580c !important;
+    }
+  </style>
 </head>
 
 <body class="theme-page-cyber-blue page-careers">
@@ -164,7 +303,7 @@
       <div class="why-interactive-grid">
         
         <!-- Feature 01: GROW -->
-        <div class="why-feature-card reveal-up" data-delay="100">
+        <div class="why-feature-card card-grow reveal-up" data-delay="100">
           <div class="why-card-glow"></div>
           <div class="why-card-number">01</div>
           <div class="why-icon-circle">
@@ -182,7 +321,7 @@
         </div>
 
         <!-- Feature 02: INNOVATE -->
-        <div class="why-feature-card reveal-up" data-delay="200">
+        <div class="why-feature-card card-innovate reveal-up" data-delay="200">
           <div class="why-card-glow"></div>
           <div class="why-card-number">02</div>
           <div class="why-icon-circle">
@@ -200,7 +339,7 @@
         </div>
 
         <!-- Feature 03: COLLABORATE -->
-        <div class="why-feature-card reveal-up" data-delay="300">
+        <div class="why-feature-card card-collaborate reveal-up" data-delay="300">
           <div class="why-card-glow"></div>
           <div class="why-card-number">03</div>
           <div class="why-icon-circle">
@@ -218,7 +357,7 @@
         </div>
 
         <!-- Feature 04: MAKE AN IMPACT -->
-        <div class="why-feature-card reveal-up" data-delay="400">
+        <div class="why-feature-card card-impact reveal-up" data-delay="400">
           <div class="why-card-glow"></div>
           <div class="why-card-number">04</div>
           <div class="why-icon-circle">
@@ -315,7 +454,7 @@
       <div class="culture-values-layout">
         
         <!-- Value 1: Curiosity -->
-        <div class="culture-value-pillar reveal-left" data-delay="100">
+        <div class="culture-value-pillar pillar-curiosity reveal-left" data-delay="100">
           <div class="pillar-top-accent"></div>
           <div class="pillar-icon"><i class="fas fa-magnifying-glass"></i></div>
           <h3 class="pillar-title">Curiosity</h3>
@@ -326,7 +465,7 @@
         </div>
 
         <!-- Value 2: Ownership -->
-        <div class="culture-value-pillar reveal-up" data-delay="200">
+        <div class="culture-value-pillar pillar-ownership reveal-up" data-delay="200">
           <div class="pillar-top-accent"></div>
           <div class="pillar-icon"><i class="fas fa-shield-heart"></i></div>
           <h3 class="pillar-title">Ownership</h3>
@@ -337,7 +476,7 @@
         </div>
 
         <!-- Value 3: Collaboration -->
-        <div class="culture-value-pillar reveal-up" data-delay="300">
+        <div class="culture-value-pillar pillar-collaboration reveal-up" data-delay="300">
           <div class="pillar-top-accent"></div>
           <div class="pillar-icon"><i class="fas fa-handshake-angle"></i></div>
           <h3 class="pillar-title">Collaboration</h3>
@@ -348,7 +487,7 @@
         </div>
 
         <!-- Value 4: Continuous Improvement -->
-        <div class="culture-value-pillar reveal-right" data-delay="400">
+        <div class="culture-value-pillar pillar-improvement reveal-right" data-delay="400">
           <div class="pillar-top-accent"></div>
           <div class="pillar-icon"><i class="fas fa-arrows-spin"></i></div>
           <h3 class="pillar-title">Continuous Improvement</h3>
