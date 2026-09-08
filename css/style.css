@@ -7102,7 +7102,6 @@ body.page-industries #retail-cpg {
   color: #0284c7 !important;
 }
 
-.industry-title,
 .industry-section-item .industry-title,
 body.theme-page-cyber-blue .industry-section-item .industry-title,
 body.page-industries .industry-section-item .industry-title {
@@ -9874,12 +9873,16 @@ body.theme-cyber-blue .industry-card:hover {
   transform: translateY(0) !important;
 }
 
-.industry-title,
-.industry-card .industry-title {
+.industry-card .industry-title,
+.industry-slide-panel .industry-title,
+.panel-header .industry-title {
   font-size: clamp(1.15rem, 1.25vw, 1.32rem) !important;
   font-weight: 700 !important;
   line-height: 1.25 !important;
   margin: 0 !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8) !important;
   word-break: normal !important;
   overflow-wrap: break-word !important;
   white-space: normal !important;
